@@ -1,0 +1,9 @@
+<h1>List of Urls</h1>
+
+<% @urls.each do |u| %>
+
+  <li><%= u.id %>: <a href="/urls/<%= u.id %>" ><%= u.link %></li></a>
+
+<% end %>
+</br>
+<a href="/urls/new">Create New Hash Code</a>
